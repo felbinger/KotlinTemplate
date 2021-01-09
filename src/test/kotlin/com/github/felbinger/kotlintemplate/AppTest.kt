@@ -14,6 +14,7 @@ class AppTest {
 
     @Transient
     private val originalOut = System.out
+
     @BeforeEach
     fun setUpStreams() {
         System.setOut(PrintStream(out, false, StandardCharsets.UTF_8))
